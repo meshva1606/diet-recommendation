@@ -1,0 +1,102 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Recommendation System - Admin Dashboard</title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Diet Plans</a></li>
+                <li><a href="#">Exercise Management</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="dashboard">
+            <h1>Dashboard</h1>
+            <div class="stats">
+                <div class="stat">
+                    <h2>Users</h2>
+                    <p>100</p>
+                </div>
+                <div class="stat">
+                    <h2>Diet Plans</h2>
+                    <p>50</p>
+                </div>
+                <div class="stat">
+                    <h2>Exercise Plans</h2>
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="charts">
+                <canvas id="users-chart" width="400" height="200"></canvas>
+                <canvas id="diet-plans-chart" width="400" height="200"></canvas>
+            </div>
+        </section>
+        <section class="users">
+            <h1>Users</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>johndoe@example.com</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Doe</td>
+                        <td>janedoe@example.com</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="diet-plans">
+            <h1>Diet Plans</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Keto Diet</td>
+                        <td>Keto diet plan for weight loss</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Vegan Diet</td>
+                        <td>Vegan diet plan for healthy living</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
